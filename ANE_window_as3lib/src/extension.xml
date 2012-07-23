@@ -1,0 +1,13 @@
+<extension xmlns="http://ns.adobe.com/air/extension/3.1">
+  <id>com.jngrt.ane.anewindowextension</id>
+  <versionNumber>1.0</versionNumber>
+  <platforms>
+	<platform name="Android-ARM">
+      <applicationDeployment>
+        <nativeLibrary>ANEWindowExtension.jar</nativeLibrary>
+        <initializer>com.jngrt.ane.ANEWindowExtension</initializer>
+        <finalizer>com.jngrt.ane.ANEWindowExtension</finalizer>
+      </applicationDeployment>
+    </platform>
+  </platforms>
+</extension>

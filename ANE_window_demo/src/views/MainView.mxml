@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:View xmlns:fx="http://ns.adobe.com/mxml/2009"
+		xmlns:s="library://ns.adobe.com/flex/spark"
+		xmlns:supportClasses="spark.skins.mobile.supportClasses.*"
+		title="Toast / Window">
+	
+	<fx:Script>
+		<![CDATA[
+			
+			import com.jngrt.ane.ANEWindowExtension;
+			
+			protected function toastHandler(event:MouseEvent):void{
+				trace("trying to call toastFunction");
+				ANEWindowExtension.toast("Toast message from flash", true);
+			}
+			
+			protected function windowHandler(event:MouseEvent):void{
+				trace("trying to call windowFunction");
+				ANEWindowExtension.makeWindowFunction();
+			}
+		]]>
+	</fx:Script>
+	
+	
+	<s:Group width="100%">
+		<s:layout>
+			<s:HorizontalLayout
+				horizontalAlign="center" />
+		</s:layout>
+		
+		<s:Button id="toastBtn"
+				  label="Toast"
+				  click="toastHandler(event)"
+				  minWidth="200"/>
+		<s:Button id="windowBtn"
+				  label="Window"
+				  click="windowHandler(event)"
+				  minWidth="200"/>
+	</s:Group>
+
+</s:View>
