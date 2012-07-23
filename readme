@@ -1,0 +1,14 @@
+Example of using Adobe AIR Native Extension to display a native android window over AIR app.
+
+This example borrows heavily from:
+https://github.com/mr-archano/Android-AIR-Extensions
+Those example really clarified a lot for me.
+
+what this extension adds is:
+- the ability to show a native window
+- callback intent from native window to ANE
+- callback event from ANE to flash
+
+what it removes are all other functions, to make the example more clear.
+I only left the toast functionality in, just to show how the extension would work with multiple functions.
+
